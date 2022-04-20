@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "Bebas Neue", cursive;
+  box-sizing: content-box;
+}
+
+.main {
+  position:absolute;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.imghere {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 34%;
+  height: 100%;
+}
+.mainlog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width:60%;
+}
+@media (max-width: 600px) {
+  .mainlog{
+    width:100%;
+  }
+}
+
+.btnup {
+  justify-self: end;
+  border-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin-top: 1rem;
+  align-items: center;
+}
+button {
+  
+  cursor: pointer;
+}
+/* .btnup button:first-child {
+  background-color: rgb(0, 0, 0);
+  border-style: none;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255); */
+/* } */
+.btnup button {
+  border-style: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  width: 7rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.btnup button:nth-child(2):hover {
+  background-color: black;
+  color: white;
+}
+
+.textone {
+  justify-self: center;
+}
+
+.textone {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  height: fit-content;
+  width: fit-content;
+  padding-top: 4rem;
+}
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  height: fit-content;
+  width: fit-content;
+  padding-top: 1.5rem;
+}
+
+.inputbox input {
+  font-family: "Montserrat", sans-serif;
+  margin: 0.9rem 1rem 1rem 0.9rem;
+  width: 30rem;
+  font-size: 1.2rem;
+  color: black;
+  height: 2.3rem;
+  border: solid black 0.08rem;
+  border-radius: 0.5rem;
+  outline: black;
+  background: white;
+  align-items: center;
+  color: grey;
+  padding-left: 1rem;
+  font-weight: 400;
+}
+
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+
+  /* bottom: 50px; */
+}
+
+.forget {
+  width: fit-content;
+  letter-spacing: 0.07rem;
+  padding-left: 25rem;
+  font-family: "Montserrat", sans-serif;
+}
+.mainbtn {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 30rem;
+  justify-self: center;
+
+  grid-row-gap: 1rem;
+  padding-top: 4rem;
+}
+.mainbtn button {
+  height: 2.8rem;
+}
+.mainbtn button:first-child {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  border-style: none;
+}
+
+
+@media (max-width: 1070px) {
+  .imghere {
+    display: none;
+  }
+
+  
+}
+
+@media (max-width: 520px) {
+  .imghere {
+    display: none;
+  }
+
+  .btnup {
+    width: 60%;
+  }
+
+  .btnup button{
+    font-size: 1.2rem;
+  }
+}
+
